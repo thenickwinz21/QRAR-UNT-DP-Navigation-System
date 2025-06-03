@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>QRAR - Student Parking - Second Floor - Wing Selection</title>
+<link rel = "stylesheet" type = "text/css" href="QRARCSS.css" >
+<link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+</head>
+	
+<body>
+<!--JS for opening menu-->
+<script>
+function toggleMenu() {
+  var menu = document.getElementById("menu");
+  if (menu.style.display == "none") {
+    menu.style.display = "block";
+  } else {
+    menu.style.display = "none";
+  }
+}
+</script>
+<!--JS for redirect query-->
+<script>
+    function redirectToFloor() {
+        const selectedWing = document.querySelector('input[name="sPWing2"]:checked').value;
+        if (selectedWing === 'SPB') {
+            window.location.href = 'SP-F2-B.html';
+        } else if (selectedWing === 'SPD') {
+            window.location.href = 'SP-F2-D.html';
+        } else if (selectedWing === 'SPE') {
+            window.location.href = 'SP-F2-E.html';
+        } else if (selectedWing === 'SPF') {
+            window.location.href = 'SP-F2-F.html';
+        } else if (selectedWing === 'SPK') {
+            window.location.href = 'SP-F2-K.html';
+        }
+}
+</script>
+<!--Image map for going back to the homepage-->
+<map name="text">
+  <area shape="rect" coords="1,1,90,90" alt="Back to HomePage" href="HomePage.html">
+</map>
+<!--Image map for button-->
+  <area shape="rect" coords="1,1,90,90" alt="Submit" href="notsureyet.html">
+<!--Tab content-->
+<div class="tab">
+  <figure><div class="tab-text" usemap="text">QRAR</div></figure>
+  <img class="tab-image" src="dinojpg.png" alt="Logo" usemap="#text">
+</div>
+	
+<div class="hamburger" onclick="toggleMenu()">
+  <img class = "tab-HBM" src="HBM.PNG" alt="HBM">
+</div>
+<div class="tab2" style="background-color: #D3F1EC">
+	<div class="tab2content">
+		<img src="pinpoint1.png" alt="Blue pinpoint">
+		<div class="tab2text">
+			Student Parking
+		</div>
+	</div>
+</div>
+<!--Menu items-->
+<div class="menu" id="menu">
+  <a href="about.html"><div class="menu-item">About</div></a>
+  <div class="menu-divider"></div>
+  <a href="updatelog.html"><div class="menu-item">Update Log</div></a>
+</div>
+<!--Homepage content-->
+<div class="section-two">
+	<h1 style="margin-top: 145px;">Select Wing</h1>
+	
+	<div class="boxbackground">
+		<div class="boxcontent">
+			<h2 style="font-size: 14vw">Wing:</h2>
+			<form id="SPWingSelectionF2">
+			<label style="font-size: 8vw;padding-right: 75%">
+            	<input type="radio" name="sPWing2" value="SPB">
+            	B
+        	</label>
+			<label style="font-size: 8vw;;padding-right: 75%">
+            	<input type="radio" name="sPWing2" value="SPD">
+            	D
+        	</label>
+			<label style="font-size: 8vw;padding-right: 75%">
+            	<input type="radio" name="sPWing2" value="SPE">
+           	  E
+        	</label>
+			<label style="font-size: 8vw;padding-right: 75%">
+            	<input type="radio" name="sPWing2" value="SPF">
+            	F
+        	</label>
+			<label style="font-size: 8vw;padding-right: 75%">
+            	<input type="radio" name="sPWing2" value="SPK">
+            	K
+        	</label>
+			<button type="button" onclick="redirectToFloor()">
+				<div class = "boxbackground2" style="100%">
+					<div class = "boxcontent2" style ="font-size: 10vw;width: 100%">
+						<h2 style="font-size: 12vw;padding-left: 11%">Submit</h2>
+					</div>
+					</div>
+				</button>
+			</form>
+		</div>
+	</div>
+	
+	
+	
+
+	
+<div class="section-image" style="background-color: #C5FF9F">
+	<img src="Dinocolor.png" class="image-offset" alt="QRAR Dinosaur">
+</div>
+	
+<div class="section-footer">
+	<div class="flex-container">
+		<h6>2024</h6>
+		<h6>@QRAR</h6>
+	</div>
+</div>
+</div>
+</body>
+</html>
