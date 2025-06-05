@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>QRAR - SPF2B</title>
+<link rel = "stylesheet" type = "text/css" href="QRARCSS.css" >
+<link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+</head>
+	
+<body>
+<!--JS for opening menu-->
+<script>
+function toggleMenu() {
+  var menu = document.getElementById("menu");
+  if (menu.style.display == "none") {
+    menu.style.display = "block";
+  } else {
+    menu.style.display = "none";
+  }
+}
+</script>
+<!--Image map for going back to the homepage-->
+<map name="text">
+  <area shape="rect" coords="1,1,90,90" alt="Back to HomePage" href="HomePage.html">
+</map>
+<!--Tab content-->
+<div class="tab">
+  <figure><div class="tab-text" usemap="text">QRAR</div></figure>
+  <img class="tab-image" src="dinojpg.png" alt="Logo" usemap="#text">
+</div>
+	
+<div class="hamburger" onclick="toggleMenu()">
+  <img class = "tab-HBM" src="HBM.PNG" alt="HBM">
+</div>
+<div class="tab2" style="background-color: #D3F1EC">
+	<div class="tab2content">
+		<img src="pinpoint1.png" alt="Blue pinpoint">
+		<div class="tab2text">
+			Student Parking
+		</div>
+	</div>
+</div>
+<!--Menu items-->
+<div class="menu" id="menu">
+  <a href="about.html"><div class="menu-item">About</div></a>
+  <div class="menu-divider"></div>
+  <a href="updatelog.html"><div class="menu-item">Update Log</div></a>
+</div>
+<!--Homepage content-->
+<div class="section-two">
+	<h2 style="margin-top: 165px">You Selected</h2>
+	<h1>Wing D</h1>
+	<h2>on</h2>
+	<h1>Floor 2</h1>
+	<div class = "boxbackground">
+		<div class = "box-image">
+			<img src ="SPF2(All).png" class="box-image" alt="First floor map of UNT Discovery Park in Denton, Texas">
+		</div>
+		<div class = "box-image">
+			<img src ="SPF2D.png" class="box-image" style="margin-top: 1%" alt="Second floor map of UNT Discovery Park in Denton, Texas">
+		</div>
+  </div>
+	<div class="boxbackground">
+		<div class="boxcontent">
+			<p>
+			Once you enter through the student parking lot entrance, on your immediate left, there will be a set of stairs. Go up one flight of stairs, and upon reaching the top, go straight forward. In front of you will be the D wing.
+			</p>
+		</div>
+	</div>
+</div>
+	
+<div class="section-image" style="background-color: #C5FF9F">
+	<img src="Dinocolor.png" class="image-offset" alt="QRAR Dinosaur">
+</div>
+	
+<div class="section-footer">
+	<div class="flex-container">
+		<h6>2024</h6>
+		<h6>@QRAR</h6>
+	</div>
+</div>
+</body>
+</html>
